@@ -1,3 +1,4 @@
+"use strict";
 window.onload = function () {
     var calc = new Calculator();
     var num1 = document.getElementById('num1');
@@ -21,5 +22,4 @@ var Calculator = (function () {
     };
     return Calculator;
 }());
-var cal = new Calculator();
 //# sourceMappingURL=Calculator.js.map

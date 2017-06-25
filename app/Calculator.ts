@@ -23,4 +23,3 @@ class Calculator{
     }
 }
 
-let cal = new Calculator();
