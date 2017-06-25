@@ -2,11 +2,12 @@ window.onload = function () {
     var calc = new Calculator();
     var num1  = <HTMLInputElement>document.getElementById('num1');
     var num2 = <HTMLInputElement>document.getElementById('num2');
+    var result = <HTMLSpanElement>document.getElementById('result');
     document.getElementById('Add').onclick = function() {
-        alert(calc.add(parseInt(num1.value),parseInt(num2.value)));
+        result.innerHTML = calc.add(parseInt(num1.value),parseInt(num2.value)).toString();
     };
     document.getElementById('Subtract').onclick = function() {
-        alert(calc.subtract(parseInt(num1.value),parseInt(num2.value)));
+        result.innerHTML = calc.subtract(parseInt(num1.value),parseInt(num2.value)).toString();
     };
 };
 
