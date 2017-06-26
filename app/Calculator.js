@@ -26,6 +26,12 @@ var Calculator = (function () {
         }
         return x - y;
     };
+    Calculator.prototype.multiple = function (x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            return 0;
+        }
+        return x * y;
+    };
     return Calculator;
 }());
 //# sourceMappingURL=Calculator.js.map

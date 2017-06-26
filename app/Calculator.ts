@@ -23,5 +23,10 @@ class Calculator{
         if(isNaN(x) || isNaN(y)){ return 0;}
         return x - y;
     }
+
+    multiple(x:number, y:number):number{
+        if(isNaN(x) || isNaN(y)){ return 0;}
+        return x * y;
+    }
 }
 
