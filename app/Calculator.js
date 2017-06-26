@@ -15,9 +15,15 @@ var Calculator = (function () {
     function Calculator() {
     }
     Calculator.prototype.add = function (x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            return 0;
+        }
         return x + y;
     };
     Calculator.prototype.subtract = function (x, y) {
+        if (isNaN(x) || isNaN(y)) {
+            return 0;
+        }
         return x - y;
     };
     return Calculator;

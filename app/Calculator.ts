@@ -15,10 +15,12 @@ window.onload = function () {
 class Calculator{
 
     add(x:number, y:number):number{
+        if(isNaN(x) || isNaN(y)){ return 0;}
         return x + y;
     }
 
     subtract(x:number, y:number):number{
+        if(isNaN(x) || isNaN(y)){ return 0;}
         return x - y;
     }
 }
