@@ -13,7 +13,9 @@ window.onload = function () {
 
 
 class Calculator{
-
+    public num1:number;
+    public num2: number;
+    
     add(x:number, y:number):number{
         if(isNaN(x) || isNaN(y)){ return 0;}
         return x + y;
